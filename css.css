@@ -7,10 +7,6 @@
     font-family: Audiowide;
 }
 
-/* ---- reset ---- */
-body {
-    margin: 0;
-}
 
 canvas {
     display: block;
@@ -19,52 +15,13 @@ canvas {
 /* ---- particles.js container ---- */
 #particles-js {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 140%;
     background-image: url("");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: 50% 50%;
 }
-
-/* ---- stats.js ---- */
-.count-particles {
-    background: #000022;
-    position: absolute;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
-}
-
-/* Audiowide */
-
-/* Quantico */
 
 
 body {
@@ -75,10 +32,10 @@ body {
 
 nav {
     display: flex;
-    background-color: #470002;
-    box-shadow: 0px 0px 20px #000;
-    overflow: hidden;
 
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -92,6 +49,7 @@ nav li {
     padding: 8px;
     font-size: 34px;
     margin: 10px 20px;
+    z-index: 9999;
 }
 
 
@@ -139,7 +97,6 @@ nav li:hover {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    margin-top: 100px;
     z-index: 999;
 
 }
@@ -219,6 +176,38 @@ nav li:hover {
     background: linear-gradient(280deg, #000, #470002);
 }
 
+
+
+
+
+.nexor {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 70px;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    text-shadow: 0px 0px 30px #720004;
+}
+
+#pxp {
+    color: #7700b7;
+    border: solid 2px #7700b7;
+    padding: 4px;
+    border-radius: 2vh;
+    transition: .4s;
+    z-index: 9999;
+
+
+}
+
+#pxp:hover {
+    background-color: #7700b7;
+    color: #fff;
+    transform: scale(1.08);
+}
+
 footer {
     z-index: 9999;
 }
@@ -230,55 +219,42 @@ footer {
     font-size: 24px;
     gap: 50px;
     padding: 20px;
-    margin-top: 100px;
-    z-index: 99999;
+    z-index: 9999;
 }
 
-.foot p {
-    color: #720004;
-}
-
-.foot__dat1 {
+.dat {
     display: flex;
     flex-direction: column;
-    border-right: solid 2px #720004;
-    padding: 30px 70px;
-    align-items: center;
-}
-
-#pxp {
-    color: #7700b7;
-    border: solid 2px #7700b7;
-    padding: 4px;
-    border-radius: 2vh;
-    transition: .6s;
-}
-
-#pxp:hover {
-    background-color: #7700b7;
-    color: #fff;
-    transform: scale(1.08);
-    margin-top: 10px;
-}
-
-.foot__dat2 {
-    display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
+    z-index: 9999;
 }
 
-.derechos {
+
+.dat h3 {
+    color: #720004;
+    text-shadow: 0px 0px 2px #fff;
+    font-size: 40px;
+    font-weight: 200;
+    z-index: 9999;
+
+}
+
+.dat ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #720004;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.dat li {
     font-size: 20px;
-    background-color: #fff;
-    padding: 10px;
 }
 
-.derechos p {
-    color: #000;
-    text-align: center;
-    border: solid 3px #720004;
-    padding: 10px;
-}
 
 /* ===============================SKILLS============== */
 .div__h1__skill {
@@ -286,10 +262,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1c0001;
     font-weight: 100;
     padding-top: 30px;
-    box-shadow: -10px -20px 20px #000;
 }
 
 .div__h1__skill h1 {
@@ -306,8 +280,6 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     JUSTIFY-CONTENT: CENTER;
-    background-color: #1c0001;
-    box-shadow: -10px 20px 20px #000;
 }
 
 .div__skill {
@@ -385,4 +357,96 @@ footer {
 
 .imagen__cnt {
     width: 160px;
+}
+
+@media(max-width:400px) {
+    #particles-js {
+        margin-top: 100px;
+        width: auto;
+        height: 600px;
+    }
+
+    body {
+        background: linear-gradient(300deg, #000, #650003);
+
+    }
+
+    header {
+        display: flex;
+
+    }
+
+    nav {
+        position: fixed;
+        z-index: 9999;
+
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    #jp {
+        margin-top: 100px;
+        font-size: 40px;
+    }
+
+    #dw {
+        font-size: 30px;
+    }
+
+    #yo {
+        width: 200px;
+    }
+
+    /* ==============SKILLS========= */
+    .div__h1__skill h1 {
+        font-size: 60px;
+    }
+
+    .section__skill {
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .div__skill {
+        filter: none;
+        padding: 10px;
+        background: linear-gradient(360deg, #000, #470002);
+        border-radius: 2vh;
+
+    }
+
+    .div__skill h3 {
+        font-size: 18px;
+        font-weight: 20;
+        text-wrap: wrap;
+    }
+
+    .imagen__skill {
+        width: 70px;
+    }
+
+    /* =================CONTACTO========= */
+    .div__h1__contacto {
+        margin-top: 100px;
+    }
+
+    .div__h1__contacto h1 {
+        font-size: 40px;
+    }
+
+    .section__contacto {
+        gap: 20px;
+    }
+
+    .div__cnt {
+        filter: none;
+    }
+
+    .imagen__cnt {
+        width: 90px;
+    }
+
 }

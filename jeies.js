@@ -2,7 +2,7 @@ window.onload = function () {
     particlesJS("particles-js", {
         particles: {
             number: {
-                value: 30,
+                value: 40,
                 density: { enable: true, value_area: 960 }
             },
             color: { value: "#fff" },
@@ -18,12 +18,11 @@ window.onload = function () {
                 anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
             },
             size: {
-                value: 30,
+                value: 40,
                 random: true,
                 anim: {
                     enable: true,
                     speed: 4,
-                    size_min: 5,
                     sync: true
                 }
             },
@@ -32,7 +31,7 @@ window.onload = function () {
                 distance: 200,
                 color: "#fff",
                 opacity: 1,
-                width: 1,
+                width: 1.8,
             },
             move: {
                 enable: true,
@@ -40,7 +39,7 @@ window.onload = function () {
                 direction: "none",
                 random: true,
                 straight: false,
-                out_mode: "out",
+                out_mode: "bounce",
                 bounce: false,
                 attract: { enable: false, rotateX: 600, rotateY: 1200 }
             }
